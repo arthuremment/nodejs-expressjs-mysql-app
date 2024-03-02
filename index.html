@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1abc9c">
+    <title>PHONE DIRECTORY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <ul class="shape">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <header>
+        <div class="one">PHONE</div>
+        <div class="two">DIRECTORY</div>
+    </header>
+
+    <section class="section">
+        <input type="text" class="search" id="searchBar" placeholder="Search">
+
+        <div class="add" onclick="Toggleadd()"><img src="./assets/person_add.svg" alt="add a contact"></div>
+        <div class="add_card" id="add_card">
+            <h2>ADD A CONTACT</h2>
+            <form action="">
+                <input type="text" id="addName" placeholder="Name" required>
+                <input type="tel" id="addPhone" placeholder="Phone" required>
+                <button type="button" onclick="addContact()">ADD</button>
+            </form>
+        </div>
+        <div class="add_card" id="modify_card">
+            <h2>MODIFY CONTACT</h2>
+            <form action="">
+                <input type="text" id="updateName" placeholder="Name" required>
+                <input type="tel" id="updatePhone" placeholder="Phone" required>
+                <button type="button" id="modify" onclick="updateContact()">MODIFY</button>
+            </form>
+        </div>
+        <div class="add_card" id="delete_card">
+            <h2>DELETE CONTACT</h2>
+            <form action="">
+                <p>Do you really want to delete this contact ?</p>
+                <button type="button">NO</button>
+                <button type="button">YES, DELETE</button>
+            </form>
+        </div>
+
+        <div>
+            <table id="table">
+                <tr>
+                    <th>NAME</th>
+                    <th class="phone">PHONE</th>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+</html>
